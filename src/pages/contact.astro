@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ContactCta from "@/components/ContactCta";
-import { siteConfig } from "@/config/site";
+import { siteConfig, toBasePath } from "@/config/site";
 ---
 
 <BaseLayout
@@ -16,7 +16,7 @@ import { siteConfig } from "@/config/site";
       collaboration, and security engineering opportunities there.
     </p>
 
-    <div class="mt-6 grid gap-4 sm:grid-cols-2">
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       <a
         class="focus-ring card p-4 transition hover:border-accent"
         href={siteConfig.linkedinUrl}
@@ -35,6 +35,22 @@ import { siteConfig } from "@/config/site";
       >
         <h2 class="font-semibold">GitHub</h2>
         <p class="mt-2 text-sm text-muted">Review public projects and open an issue for technical questions.</p>
+      </a>
+
+      <a
+        class="focus-ring card p-4 transition hover:border-accent"
+        href="https://github.com/orgs/ab-cyber-ops/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={toBasePath("images/org-logo (1).png")}
+          alt="ab-cyber-ops organization logo"
+          class="mb-3 h-16 w-16 rounded-md object-cover"
+          loading="lazy"
+        />
+        <h2 class="font-semibold">GitHub Org: ab-cyber-ops</h2>
+        <p class="mt-2 text-sm text-muted">Explore collaborative security engineering and cyber operations projects.</p>
       </a>
     </div>
 

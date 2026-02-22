@@ -8,8 +8,9 @@ tags:
 summary: Lab observations on repeatable test execution patterns for validating detection behavior and noise profiles.
 links:
   - label: Reference Repo
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
 Execution checklist for repeatable emulation runs and post-run analysis criteria.
+

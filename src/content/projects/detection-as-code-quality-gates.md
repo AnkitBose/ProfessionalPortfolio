@@ -8,7 +8,7 @@ tags:
 summary: A reusable quality framework that enforces PR checks, documentation quality, MITRE mapping integrity, and coverage reporting.
 links:
   - label: GitHub Repository Placeholder
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
@@ -23,3 +23,4 @@ Detection repositories need predictable quality gates to avoid drift and inconsi
 
 ## Operational Impact
 This approach creates repeatable engineering hygiene and improves review quality for both individual detections and program-level coverage.
+

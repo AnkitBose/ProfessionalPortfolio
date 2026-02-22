@@ -1,7 +1,7 @@
 # Deployment Guide
 
 ## 1. Repository Prerequisites
-- Repository name must be `Portfolio`
+- Repository name must be `ProfessionalPortfolio`
 - Default branch should be `main`
 - Workflows must be enabled in repository settings
 
@@ -13,12 +13,12 @@
 5. Push to `main` to trigger deployment.
 
 The deployed URL should be:
-`https://AnkitBose.github.io/Portfolio/`
+`https://AnkitBose.github.io/ProfessionalPortfolio/`
 
 ## 3. Base Path
 This project is configured with:
 - `site = "https://AnkitBose.github.io"`
-- `base = "/Portfolio/"`
+- `base = "/ProfessionalPortfolio/"`
 
 Do not change this unless the repository name or hosting target changes.
 
@@ -54,3 +54,6 @@ For future custom domain:
 2. Update `astro.config.mjs` site URL.
 3. Update canonical URL in `src/config/site.ts`.
 4. Re-deploy.
+
+
+

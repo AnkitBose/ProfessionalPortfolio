@@ -9,7 +9,7 @@ tags:
 summary: High-level staged roadmap for a custom EDR/SIEM concept using open-source foundations and future MCP/AI-assisted workflows.
 links:
   - label: GitHub Repository Placeholder
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
@@ -24,3 +24,4 @@ Explore system design tradeoffs for an internal learning roadmap spanning teleme
 
 ## Guardrails
 This is an architectural exploration only and intentionally excludes offensive or misuse-oriented implementation details.
+

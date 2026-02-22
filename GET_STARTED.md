@@ -17,9 +17,9 @@ npm run security:audit
 
 ## 3. Project pages deployment target
 This project is configured for GitHub project pages:
-- Repository: `AnkitBose/Portfolio`
-- Base path: `/Portfolio/`
-- URL: `https://AnkitBose.github.io/Portfolio/`
+- Repository: `AnkitBose/ProfessionalPortfolio`
+- Base path: `/ProfessionalPortfolio/`
+- URL: `https://AnkitBose.github.io/ProfessionalPortfolio/`
 
 ## 4. GitHub setup (Actions + Pages)
 1. Push this code to the `main` branch.
@@ -42,7 +42,7 @@ Then re-run deploy.
 GA4 is optional and remains disabled by default.
 
 ## 6. Post-deploy checklist
-1. Verify route loading under `/Portfolio/`:
+1. Verify route loading under `/ProfessionalPortfolio/`:
    - `/`, `/about`, `/projects`, `/labs`, `/resume`, `/contact`
 2. Replace `public/resume.pdf` with your real resume.
 3. Replace `public/social-card.png` with a branded OG image.
@@ -50,3 +50,6 @@ GA4 is optional and remains disabled by default.
    - canonical, OpenGraph, Twitter cards, JSON-LD, sitemap, robots
 5. Review `npm audit` results and decide whether to make audit blocking in CI.
 6. Replace placeholder Projects/Labs markdown content with production-ready entries.
+
+
+

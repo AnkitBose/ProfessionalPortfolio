@@ -8,8 +8,9 @@ tags:
 summary: Notes on building a deterministic KQL validation harness for schema checks and regression detection.
 links:
   - label: Reference Repo
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
 Short notes on validating KQL query structure against expected table schemas and test fixtures.
+

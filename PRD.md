@@ -26,7 +26,8 @@ Security-first portfolio website for Ankit Bose.
 
 ## Success Criteria
 - Build/lint/typecheck pass in CI
-- Deploys correctly at `/Portfolio/`
+- Deploys correctly at `/ProfessionalPortfolio/`
 - No public email by default
 - Content pipeline rejects markdown raw HTML
 - SEO and metadata configured
+

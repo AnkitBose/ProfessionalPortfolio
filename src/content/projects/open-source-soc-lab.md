@@ -9,7 +9,7 @@ tags:
 summary: Iterative SOC lab program combining endpoint and network telemetry to validate detections and response workflows.
 links:
   - label: GitHub Repository Placeholder
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: true
 ---
 
@@ -26,3 +26,4 @@ Build a realistic test environment for detection quality and analyst workflow va
 
 ## Value
 The lab supports threat-informed validation loops and practical tuning before content reaches production.
+

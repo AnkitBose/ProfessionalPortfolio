@@ -7,7 +7,7 @@ A static, security-first personal portfolio built with Astro, Tailwind CSS, and 
 - Role: Cyber Security Manager @ PwC Canada
 - GitHub: https://github.com/AnkitBose
 - LinkedIn: https://www.linkedin.com/in/ankit-bose-497a808a/
-- Deployment URL: https://AnkitBose.github.io/Portfolio/
+- Deployment URL: https://AnkitBose.github.io/ProfessionalPortfolio/
 
 ## Stack
 - Astro (static output)
@@ -55,11 +55,13 @@ Set environment variables for deploy if needed:
 GA4 remains optional and disabled by default.
 
 ## GitHub Pages
-This project is configured for project pages with base path `/Portfolio/`.
+This project is configured for project pages with base path `/ProfessionalPortfolio/`.
 
 See `DEPLOYMENT.md` for exact setup steps.
 
 
 ## Quick Start Guide
 See GET_STARTED.md for local setup, GitHub Pages, analytics, and post-deploy checklist.
+
+
 

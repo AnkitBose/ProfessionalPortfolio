@@ -5,7 +5,8 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://AnkitBose.github.io",
-  base: "/Portfolio/",
+  base: "/ProfessionalPortfolio/",
   output: "static",
   integrations: [tailwind(), sitemap(), react()]
 });
+

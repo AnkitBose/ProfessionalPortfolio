@@ -9,7 +9,7 @@ tags:
 summary: Enterprise detection delivery framework for Microsoft Sentinel using validation-first CI and artifact-based CD with approvals and version traceability.
 links:
   - label: GitHub Repository Placeholder
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: true
 ---
 
@@ -29,3 +29,4 @@ I designed a CI/CD framework in Azure DevOps for Sentinel content where pull req
 
 ## Outcome
 The system reduces defective detection promotions and improves confidence in release quality under team scale.
+

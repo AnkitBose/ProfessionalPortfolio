@@ -3,10 +3,10 @@ export const siteConfig = {
   role: "Cyber Security Manager",
   company: "PwC Canada",
   githubUsername: "AnkitBose",
-  githubRepo: "Portfolio",
+  githubRepo: "ProfessionalPortfolio",
   linkedinUrl: "https://www.linkedin.com/in/ankit-bose-497a808a/",
-  canonicalBaseUrl: "https://AnkitBose.github.io/Portfolio/",
-  projectBasePath: "/Portfolio/",
+  canonicalBaseUrl: "https://AnkitBose.github.io/ProfessionalPortfolio/",
+  projectBasePath: "/ProfessionalPortfolio/",
   features: {
     analytics: {
       cloudflare: {
@@ -32,3 +32,6 @@ export const toBasePath = (path = ""): string => {
   const normalized = path.replace(/^\/+/, "");
   return normalized ? `${base}${normalized}` : base;
 };
+
+
+

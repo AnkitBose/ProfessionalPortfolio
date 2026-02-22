@@ -8,8 +8,9 @@ tags:
 summary: Experimental mapping approach for Sigma rules to Sentinel-compatible KQL with validation checkpoints.
 links:
   - label: Reference Repo
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
 Conversion notes with emphasis on field mapping reliability, fallback logic, and reviewer verification points.
+

@@ -8,8 +8,9 @@ tags:
 summary: Practical comparison of baseline-driven and threshold-driven detection strategies across evolving environments.
 links:
   - label: Reference Repo
-    url: https://github.com/AnkitBose/Portfolio
+    url: https://github.com/AnkitBose/ProfessionalPortfolio
 featured: false
 ---
 
 Working rationale for selecting baseline models where static thresholds produce unstable signal quality.
+

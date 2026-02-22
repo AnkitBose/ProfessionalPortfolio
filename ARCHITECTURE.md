@@ -20,6 +20,7 @@ The site is a static Astro application with markdown content collections for Pro
 
 ## Build and Deploy
 - Build output: `dist/`
-- Base path: `/Portfolio/`
+- Base path: `/ProfessionalPortfolio/`
 - CI validates lint/typecheck/build and runs visible non-blocking dependency audit
 - Deploy workflow publishes artifact to GitHub Pages
+

@@ -3,6 +3,9 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import ToolingStack from "@/components/ToolingStack.astro";
 import ProcessLoop from "@/components/ProcessLoop.astro";
 import { toBasePath } from "@/config/site";
+import profileImage from "@/assets/me.png";
+import featuredBirdImage from "@/assets/featured-cyber-bird.png";
+import orgLogoImage from "@/assets/org-logo.png";
 ---
 
 <BaseLayout
@@ -38,9 +41,9 @@ import { toBasePath } from "@/config/site";
     <aside class="card p-6">
       <figure class="mb-4 overflow-hidden rounded-lg border border-border">
         <img
-          src={toBasePath("images/me.png")}
+          src={profileImage.src}
           alt="Profile photo of Ankit Bose"
-          class="h-64 w-full object-cover"
+          class="h-72 w-full object-cover object-[center_18%]"
           loading="eager"
         />
       </figure>
@@ -62,13 +65,28 @@ import { toBasePath } from "@/config/site";
       </p>
     </div>
     <figure class="card overflow-hidden">
-      <img
-        src={toBasePath("images/featured-cyber-bird.png")}
+        <img
+        src={featuredBirdImage.src}
         alt="Neon cyber bird over a futuristic city"
-        class="h-full w-full object-cover"
+        class="block h-full w-full object-cover"
         loading="lazy"
       />
     </figure>
+  </section>
+
+  <section class="mt-12">
+    <a
+      class="focus-ring card flex items-center gap-4 p-4 transition hover:border-accent"
+      href="https://github.com/orgs/ab-cyber-ops/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src={orgLogoImage.src} alt="ab-cyber-ops organization logo" class="h-14 w-14 rounded-md object-cover" loading="lazy" />
+      <div>
+        <h2 class="text-lg font-semibold">GitHub Organization: ab-cyber-ops</h2>
+        <p class="mt-1 text-sm text-muted">Collaborative cyber operations and security engineering workstream.</p>
+      </div>
+    </a>
   </section>
 
   <section class="mt-12 grid gap-6">

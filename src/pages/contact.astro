@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ContactCta from "@/components/ContactCta";
-import { siteConfig, toBasePath } from "@/config/site";
+import { siteConfig } from "@/config/site";
+import orgLogoImage from "@/assets/org-logo.png";
 ---
 
 <BaseLayout
@@ -44,7 +45,7 @@ import { siteConfig, toBasePath } from "@/config/site";
         rel="noopener noreferrer"
       >
         <img
-          src={toBasePath("images/org-logo (1).png")}
+          src={orgLogoImage.src}
           alt="ab-cyber-ops organization logo"
           class="mb-3 h-16 w-16 rounded-md object-cover"
           loading="lazy"

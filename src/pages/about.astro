@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="About"
+  description="About Ankit Bose: systems-thinking detection engineering leader focused on baselining, schema integrity, and automation-first operations."
+  path="about/"
+>
+  <section class="mx-auto grid max-w-3xl gap-6">
+    <h1 class="text-3xl font-semibold tracking-tight">About</h1>
+    <p class="text-base leading-7 text-muted">
+      I approach security engineering as a systems problem. Effective detections are not just query logic; they are a
+      product of telemetry reliability, schema consistency, test discipline, and controlled release paths.
+    </p>
+    <p class="text-base leading-7 text-muted">
+      My philosophy favors baselining over static thresholds whenever possible. Baselines capture behavior and context,
+      while thresholds alone can drift into noise as environments evolve.
+    </p>
+    <p class="text-base leading-7 text-muted">
+      I pay close attention to schema drift and data health because brittle data assumptions silently break detections.
+      I design guardrails that treat content quality and telemetry quality as first-class dependencies.
+    </p>
+    <p class="text-base leading-7 text-muted">
+      Operationally, I prefer automation-first loops: research, plan, execute, test, and review. This keeps teams fast
+      without sacrificing auditability or confidence.
+    </p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContactCta from "@/components/ContactCta";
+import { siteConfig } from "@/config/site";
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contact Ankit Bose via LinkedIn and GitHub. No public email or contact form is exposed by default."
+  path="contact/"
+>
+  <section class="mx-auto max-w-3xl">
+    <h1 class="text-3xl font-semibold tracking-tight">Contact</h1>
+    <p class="mt-4 text-base leading-7 text-muted">
+      The preferred way to reach me is through LinkedIn messages. I review inbound requests for introductions,
+      collaboration, and security engineering opportunities there.
+    </p>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-2">
+      <a
+        class="focus-ring card p-4 transition hover:border-accent"
+        href={siteConfig.linkedinUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 class="font-semibold">LinkedIn</h2>
+        <p class="mt-2 text-sm text-muted">Send a direct message and include context for your request.</p>
+      </a>
+
+      <a
+        class="focus-ring card p-4 transition hover:border-accent"
+        href={`https://github.com/${siteConfig.githubUsername}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 class="font-semibold">GitHub</h2>
+        <p class="mt-2 text-sm text-muted">Review public projects and open an issue for technical questions.</p>
+      </a>
+    </div>
+
+    <div class="card mt-6 p-4">
+      <h2 class="font-semibold">Request intro</h2>
+      <p class="mt-2 text-sm text-muted">
+        Please message me on LinkedIn with your role, timeline, and why an introduction makes sense. I prioritize
+        requests with clear context.
+      </p>
+    </div>
+
+    {siteConfig.features.contact.revealEmail.enabled && siteConfig.features.contact.revealEmail.value && (
+      <ContactCta client:load email={siteConfig.features.contact.revealEmail.value} />
+    )}
+  </section>
+</BaseLayout>

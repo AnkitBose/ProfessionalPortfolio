@@ -1,0 +1,18 @@
+---
+import { siteConfig } from "@/config/site";
+
+const payload = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: siteConfig.name,
+  jobTitle: `${siteConfig.role} @ ${siteConfig.company}`,
+  sameAs: [
+    siteConfig.linkedinUrl,
+    `https://github.com/${siteConfig.githubUsername}`
+  ],
+  url: siteConfig.canonicalBaseUrl
+};
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(payload)}></script>
+

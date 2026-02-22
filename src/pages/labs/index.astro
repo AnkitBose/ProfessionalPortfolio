@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import LabCard from "@/components/LabCard.astro";
+import TagFilter from "@/components/TagFilter";
+import { toBasePath } from "@/config/site";
+
+const entries = (await getCollection("labs", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const tags = Array.from(new Set(entries.flatMap((entry) => entry.data.tags.map((tag) => tag.toLowerCase()))));
+---
+
+<BaseLayout title="Labs" description="Security labs and experiments maintained as markdown entries." path="labs/">
+  <section>
+    <h1 class="text-3xl font-semibold tracking-tight">Labs and Experiments</h1>
+    <p class="mt-3 max-w-2xl text-sm text-muted">
+      Practical notes and experiments from detection engineering and SOC architecture work.
+    </p>
+    <TagFilter client:load tags={tags} />
+    <div class="grid gap-4 md:grid-cols-2">
+      {
+        entries.map((entry) => (
+          <LabCard
+            title={entry.data.title}
+            summary={entry.data.summary}
+            tags={entry.data.tags}
+            date={entry.data.date}
+            href={toBasePath(`labs/${entry.slug}/`)}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { toBasePath } from "@/config/site";
+---
+
+<BaseLayout
+  title="Resume"
+  description="Professional summary and resume download for Ankit Bose."
+  path="resume/"
+>
+  <section class="mx-auto grid max-w-3xl gap-6">
+    <h1 class="text-3xl font-semibold tracking-tight">Resume</h1>
+    <p class="text-base text-muted">
+      This portfolio includes a placeholder resume file for deployment wiring. Replace <code>public/resume.pdf</code>
+      with the current official version before sharing externally.
+    </p>
+    <a
+      class="focus-ring inline-flex w-fit rounded-md border border-accent px-4 py-2 text-sm text-accent"
+      href={toBasePath("resume.pdf")}
+      download
+    >
+      Download Resume (PDF)
+    </a>
+  </section>
+</BaseLayout>

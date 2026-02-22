@@ -1,0 +1,17 @@
+---
+import { siteConfig } from "@/config/site";
+
+const payload = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: `${siteConfig.name} Portfolio`,
+  url: siteConfig.canonicalBaseUrl,
+  author: {
+    "@type": "Person",
+    name: siteConfig.name
+  }
+};
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(payload)}></script>
+

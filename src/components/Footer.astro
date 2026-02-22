@@ -1,0 +1,23 @@
+---
+import { siteConfig, toBasePath } from "@/config/site";
+---
+
+<footer class="mt-16 border-t border-border/70">
+  <div class="container flex flex-col gap-3 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+    <p>© {new Date().getFullYear()} {siteConfig.name}. Built with Astro + Tailwind.</p>
+    <div class="flex gap-4">
+      <a class="focus-ring hover:text-text" href={siteConfig.linkedinUrl} rel="noopener noreferrer" target="_blank"
+        >LinkedIn</a
+      >
+      <a
+        class="focus-ring hover:text-text"
+        href={`https://github.com/${siteConfig.githubUsername}/${siteConfig.githubRepo}`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        GitHub
+      </a>
+      <a class="focus-ring hover:text-text" href={toBasePath("contact/")}>Contact</a>
+    </div>
+  </div>
+</footer>

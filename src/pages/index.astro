@@ -1,0 +1,53 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ToolingStack from "@/components/ToolingStack.astro";
+import ProcessLoop from "@/components/ProcessLoop.astro";
+import { toBasePath } from "@/config/site";
+---
+
+<BaseLayout
+  title="Home"
+  description="Portfolio of Ankit Bose, Cyber Security Manager at PwC Canada, focused on detection engineering, CI/CD, and threat-informed defense."
+  path=""
+>
+  <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+    <div>
+      <p class="font-mono text-sm tracking-wide text-accent">Cyber Security Manager @ PwC Canada</p>
+      <h1 class="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+        I design and operationalize detection engineering systems that survive real change.
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">
+        I build secure delivery pipelines for detections, run telemetry-driven lab programs, and lead teams that ship
+        practical threat-informed defense outcomes.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="focus-ring rounded-md border border-accent px-4 py-2 text-sm text-accent" href={toBasePath("projects/")}
+          >Projects</a
+        >
+        <a class="focus-ring rounded-md border border-border px-4 py-2 text-sm hover:border-accent" href={toBasePath("labs/")}
+          >Labs</a
+        >
+        <a class="focus-ring rounded-md border border-border px-4 py-2 text-sm hover:border-accent" href={toBasePath("resume/")}
+          >Resume</a
+        >
+        <a class="focus-ring rounded-md border border-border px-4 py-2 text-sm hover:border-accent" href={toBasePath("contact/")}
+          >Contact</a
+        >
+      </div>
+    </div>
+    <aside class="card p-6">
+      <h2 class="text-lg font-semibold">What I build</h2>
+      <ul class="mt-4 space-y-3 text-sm leading-6 text-muted">
+        <li>Detection engineering CI/CD systems with quality gates and release controls.</li>
+        <li>Endpoint-first security labs with cross-stack telemetry and validation playbooks.</li>
+        <li>Automation-first review loops for rule quality, schema drift, and content health.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="mt-12 grid gap-6">
+    <ProcessLoop />
+    <ToolingStack />
+  </section>
+</BaseLayout>
+
